@@ -1,0 +1,71 @@
+{
+    "timestamp": "2026-11-13T05:21:11.993571+00:00",
+    "total_tests": 2,
+    "passed": 1,
+    "failed": 1,
+    "results": [
+        {
+            "question": "What was the closing balance?",
+            "retrieval_metrics": {
+                "question": "What was the closing balance?",
+                "precision_at_5": 0.3333333333333333,
+                "recall_at_5": 1.0,
+                "mrr": 1.0,
+                "answer_exact_match": 1.0,
+                "answer_keyword_coverage": 1.0,
+                "citation_accuracy": 1.0
+            },
+            "judge_metrics": {
+                "faithfulness": 5,
+                "relevance": 5,
+                "completeness": 5,
+                "groundedness": 5,
+                "overall_score": 5.0,
+                "hallucination_detected": false,
+                "reason": "The answer directly matches the evidence provided, correctly states the closing balance as INR 68450.25, and addresses the question completely without any unsupported claims or irrelevant information."
+            },
+            "checks": {
+                "retrieval_precision": false,
+                "retrieval_recall": true,
+                "answer_exact_match": true,
+                "citation_accuracy": true,
+                "judge_faithfulness": true,
+                "judge_groundedness": true,
+                "no_hallucination": true
+            },
+            "status": "FAIL"
+        },
+        {
+            "question": "What documents are required for self-employed applicants?",
+            "retrieval_metrics": {
+                "question": "What documents are required for self-employed applicants?",
+                "precision_at_5": 0.6666666666666666,
+                "recall_at_5": 1.0,
+                "mrr": 1.0,
+                "answer_exact_match": 1.0,
+                "answer_keyword_coverage": 1.0,
+                "citation_accuracy": 1.0
+            },
+            "judge_metrics": {
+                "faithfulness": 5,
+                "relevance": 5,
+                "completeness": 3,
+                "groundedness": 5,
+                "overall_score": 4.5,
+                "hallucination_detected": false,
+                "reason": "The answer is fully supported by the evidence (faithfulness=5). It directly addresses the question about required documents for self-employed applicants (relevance=5). However, it's incomplete as it only mentions two documents when the question asks what documents are required (completeness=3). The answer is grounded and doesn't contain unsupported claims (groundedness=5)."
+            },
+            "checks": {
+                "retrieval_precision": true,
+                "retrieval_recall": true,
+                "answer_exact_match": true,
+                "citation_accuracy": true,
+                "judge_faithfulness": true,
+                "judge_groundedness": true,
+                "no_hallucination": true
+            },
+            "status": "PASS"
+        }
+    ],
+    "pass_rate": 0.5
+}

@@ -84,3 +84,9 @@ def search_similar_chunks(question, top_k=5, document_id=None):
 
 def get_vector_count():
     return collection.count()
+
+def get_vectors_by_document(document_id):
+    return collection.get(
+        where={"document_id": document_id},
+        include=["metadatas"]
+    )

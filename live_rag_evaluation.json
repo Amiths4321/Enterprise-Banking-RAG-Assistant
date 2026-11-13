@@ -1,0 +1,10 @@
+{
+    "timestamp": "2026-11-13T11:07:24.767237",
+    "test_question": "What was the closing balance in the October 2026 bank statement?",
+    "answer_correct": true,
+    "source_count": 1,
+    "relevant_source_count": 1,
+    "source_precision": 1.0,
+    "citation_correct": true,
+    "overall_status": "PASS"
+}
